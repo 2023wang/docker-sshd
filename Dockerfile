@@ -14,6 +14,7 @@ EXPOSE 22
 
 COPY entry.sh /entry.sh
 
+
 ENTRYPOINT ["/entry.sh"]
 
 CMD ["/usr/sbin/sshd", "-D", "-e", "-f", "/etc/ssh/sshd_config"]
