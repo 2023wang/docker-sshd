@@ -212,6 +212,9 @@ for f in /etc/entrypoint.d/*; do
     fi
 done
 
+# set password for davi, add SSH_USERS=davi:1000:1000 to aliyun docker environment
+echo 'davi:$6$w9nafcatgikippzV$nqds/nVdhVy.nzOUi64E2qSRfc1nck2cQm/TG6s.oQ2Kfh4fkCIbs1wSNrgiU1fpDS0ttP0mN7ZMXY5.HzDIy.' | chpasswd --encrypted
+
 stop() {
     echo "Received SIGINT or SIGTERM. Shutting down $DAEMON"
     # Get PID
