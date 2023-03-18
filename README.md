@@ -1,4 +1,4 @@
-# SSHD
+# SSHD-1
 
 Minimal Alpine Linux Docker image with `sshd` exposed and `rsync` installed.
 
